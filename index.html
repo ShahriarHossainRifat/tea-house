@@ -10,8 +10,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="lg:px-60">
-    <header class="p-5 md:p-20">
+<body>
+    <header class="p-5 md:p-20 lg:px-60">
         <!-- banner -->
         <div class="flex flex-col-reverse lg:flex-row justify-between gap-5">
             <div class="lg:w-2/5">
@@ -40,7 +40,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="lg:px-60">
         <!-- featured products section -->
         <section class="text-center py-20">
             <h2 class="text-5xl font-semibold">Our Featured Products</h2>
@@ -97,10 +97,12 @@
             </div>
         </section>
         <!-- clients section -->
-        <section class="bg-gradient-to-r from-orange-500 to-red-500 flex mb-10 p-16 rounded-xl items-center justify-between">
+        <section
+            class="bg-gradient-to-r from-orange-500 to-red-500 flex mb-10 p-16 rounded-xl items-center justify-between">
             <div class="">
                 <h2 class="text-5xl font-semibold text-white">Meet Our Super Clients</h2>
-                <p class="text-white w-3/5 my-8">There are many variations of passages of Lorem Ipsum available, but the majority
+                <p class="text-white w-3/5 my-8">There are many variations of passages of Lorem Ipsum available, but the
+                    majority
                     have suffered alteration in some form, by injected humour, or randomised words which don't look even
                     slightly believable. </p>
                 <button class="bg-white font-semibold text-red-400 px-5 py-2.5 rounded-xl">Show All</button>
@@ -153,8 +155,41 @@
             </div>
         </section>
     </main>
-    <footer>
+    <!-- footer -->
+    <footer class="bg-red-100 lg:px-60 py-24 px-7">
+        <div class="flex items-center justify-between gap-3">
+            <img src="images/cup.png" alt="">
+            <div class="flex items-center gap-8">
+                <p class="text-lg font-medium text-[#494949]">Ready to get started?</p>
+                <button class="bg-red-500 px-5 py-2 rounded-lg text-white text-lg font-medium">Get Started</button>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-24">
+            <div class="flex flex-col gap-y-3">
+                <h5 class="text-lg font-semibold">Quick Links</h5>
+                <p class="text-[#494949]">Home</p>
+                <p class="text-[#494949]">About Us</p>
+                <p class="text-[#494949]">Insurance</p>
+                <p class="text-[#494949]">Privacy Policy</p>
+            </div>
+            <div class="flex flex-col gap-y-3">
+                <h5 class="text-lg font-semibold">Our Service</h5>
+                <p class="text-[#494949]">Life Insurance</p>
+                <p class="text-[#494949]">Car Insurance</p>
+                <p class="text-[#494949]">Health Insurance</p>
+                <p class="text-[#494949]">House Insurance</p>
+            </div>
+            <div class="flex flex-col gap-y-3">
+                <h5 class="text-lg font-semibold">Help</h5>
+                <p class="text-[#494949]">FAQs</p>
+                <p class="text-[#494949]">Contact Us</p>
+            </div>
+            <div>
+                <h4 class="text-2xl font-medium">Subscribe to our newsletter</h4>
 
+            </div>
+        </div>
+        <p class="text-center text-[#494949]">© 2027 UIDesign.to - All rights reserved.</p>
     </footer>
 </body>
 
